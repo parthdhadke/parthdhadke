@@ -1,0 +1,312 @@
+/* Reset & Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("images/ds-bg.gif") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Name Image at Top */
+/* Ensure the parent container is positioned */
+.hero-header {
+    position: absolute;
+    top: -300px; /* Adjust vertically */
+    left: 90px;
+    transform: translate(-10%, -10%);
+    text-align: center;
+}
+
+/* Name Image */
+.hero-name {
+    width: 1750px;
+    height: auto;
+}
+
+/* Subtext Below Name */
+.hero-subtext {
+    position: relative; /* Ensure it moves independently inside .hero-header */
+    top: -350px; /* Moves text upwards */
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative', serif;
+    color: #ff5e00;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    display: inline-block;
+}
+
+
+
+/* Knight Sprite GIF */
+.knight {
+    position: absolute;
+    bottom: 3%;
+    left: 40%;
+    width: 500px;
+    height: 500px;
+    background: url("images/knight.gif") no-repeat center center;
+    background-size: contain;
+    z-index: 2;
+}
+
+/* Social Icons in Hero */
+.hero-socials {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    display: flex;
+    gap: 15px;
+    z-index: 2;
+}
+
+.hero-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust size */
+    height: 50px; /* Keep it square */
+    background: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.hero-socials img {
+    width: 30px; /* Adjust icon size */
+    height: auto;
+}
+
+.hero-socials a:hover {
+    transform: scale(1.1);
+    background: #ddd; /* Light gray hover effect */
+}
+
+/* Section Base Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f39c12;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* About Section */
+#about {
+    background: #222;
+}
+
+/* Projects Section */
+#projects {
+    background: #333;
+}
+ 
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* Volunteering Section */
+#volunteering {
+    background: #444;
+}
+
+.volunteering-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .volunteering-images img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+/* Projects Section */
+#projects {
+    background: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.project-card .btn {
+    display: inline-block;
+    background: #f39c12;
+    color: #121212;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background: #e08e0b;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Certifications Section */
+#certifications {
+    background: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.certification {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.certification img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.certification-info {
+    margin-top: 15px;
+}
+
+.certification h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.certification p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.certification .btn {
+    background: #f39c12;
+    color: #121212;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.certification .btn:hover {
+    background: #e08e0b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Resume Download Button */
+.btn {
+    display: inline-block;
+    background: #f39c12;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #e08e0b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-name {
+        width: 250px; /* Adjust size on smaller screens */
+    }
+    .hero-subtext {
+        font-size: 1.8rem; /* Smaller text on mobile */
+    }
+    .knight {
+        width: 200px;
+        height: 280px;
+        bottom: 5%;
+        left: 30%;
+    }
+}
