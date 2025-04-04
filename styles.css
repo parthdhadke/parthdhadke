@@ -38,7 +38,6 @@ body {
     height: auto;
 }
 
-/* Subtext Below Name */
 .hero-subtext {
     position: relative; /* Ensure it moves independently inside .hero-header */
     top: -350px; /* Moves text upwards */
@@ -51,9 +50,6 @@ body {
     border-radius: 5px; /* Slight rounding for aesthetics */
     display: inline-block;
 }
-
-
-
 
 
 /* Knight Sprite GIF */
